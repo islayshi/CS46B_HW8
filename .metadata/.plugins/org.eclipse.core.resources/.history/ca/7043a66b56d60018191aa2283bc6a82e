@@ -1,0 +1,45 @@
+package airlines;
+
+import java.util.HashSet;
+
+public class FlightNet extends HashSet<Airport>{
+	//no instance variables!!!
+	
+	//returns true if the FlightNet doesn't contain an airport with 
+	//the specified name.
+	//be sure to use "deep equals"
+	public boolean nameIsAvailable(String name) {
+		if(contains(name)) {
+			return false;
+		}
+		
+		return true;
+	}
+	
+	//connects a1 and a2 in both directions
+	public void connect(Airport a1, Airport a2) {
+		
+	}
+	
+	//opposite of connect
+	//disconnect a1 and a2 and both directions
+	public void disconnect(Airport a1, Airport a2) {
+		
+	}
+	
+	//removes removeMe from FlightNet
+	//disconnects it from any airports that are still in the 
+	//FlightNet
+	public void removeAndDisconnect(Airport removeMe) {
+		
+	}
+	
+	//checks all airports in the FlightNet. 
+	//returns the first airport whose (x, y) location is within
+	//maximumDistance of the x, y args of the method
+	//returns null if no airport is within maximumDistance
+	public Airport getAirportNearXY(int x, int y, int maximumDistance) {
+		
+	}
+
+}
